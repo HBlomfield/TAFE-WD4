@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device.width, initial-scale=1.0" />
+	<title>Dark Souls Menu - WD4 TAFE</title>
+	
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="style.css" />
+	<!-- Scripting -->
+	<script src="script.js" defer="defer"></script>
+</head>
+
+<body class="menu-0" style="min-width: 320px;">
+	<h1 class="w-100 text-white text-center py-5">GAME TITLE</h1>
+	<nav id="main-options">
+		<button class="d-block text-white btn btn-primary w-100 mx-auto p-1 py-0 border-0" onclick="openMenu(1)"><h4 class="m-0 p-0 py-1">New Game</h4></button>
+		<button class="d-block text-white btn btn-primary w-100 mx-auto p-1 py-0 border-0" onclick="openMenu(2)"><h4 class="m-0 p-0 py-1">Load Game</h4></button>
+		<button class="d-block text-white btn btn-primary w-100 mx-auto p-1 py-0 border-0" onclick="openMenu(3)"><h4 class="m-0 p-0 py-1">Options</h4></button>
+		<button class="d-block text-white btn btn-primary w-100 mx-auto p-1 py-0 border-0" onclick="openMenu(4)"><h4 class="m-0 p-0 py-1">Quit</h4></button>
+	</nav>
+	<nav id="sub-options" class="container-fluid px-0 mx-0 border-bottom">
+		<button class="btn cancel border-0 text-white float-left p-0" onclick="openMenu(0)">
+			<svg viewBox="0 0 13 13">
+				<g transform="matrix(-1.2970139,1.2970139,-1.2970139,-1.2970139,4,0)">
+					<path
+					id="path851"
+					style="stroke-width:0.144246; fill:white;"
+					d="m 0,0 c 0.01411,0.01411 0.03536,0.02437 0.06358,0.03143 0.05644,0.02117 0.130447,0.03216 0.222167,0.03216 0.1905,-2e-6 0.352668,-0.0071 0.486725,-0.0212 0.141109,-0.0071 0.275314,-0.0145 0.402313,-0.02156 0.134055,-0.0071 0.28914,-0.01023 0.465527,-0.01023 0.162277,0 0.300023,0.0032 0.412912,0.01023 0.11289,0.0071 0.229386,0.01414 0.349331,0.0212 0.126999,0.01411 0.285626,0.02156 0.476125,0.02156 0.09172,-2e-6 0.166086,-0.01063 0.222533,-0.03179 0.05645,-0.01411 0.08478,-0.04244 0.08477,-0.08477 0,-0.04939 -0.02869,-0.08835 -0.08514,-0.116566 -0.05645,-0.02822 -0.144612,-0.05265 -0.264556,-0.07381 -0.261055,-0.04939 -0.465718,-0.130473 -0.613883,-0.243361 -0.148167,-0.112889 -0.22217,-0.293128 -0.222168,-0.540072 l -2e-6,-1.96297 h 1.996588 c 0.246946,0 0.426818,0.07046 0.539706,0.211571 0.112891,0.141111 0.193977,0.345773 0.243363,0.613885 0.04233,0.232833 0.105711,0.348963 0.190376,0.348963 0.04233,0 0.0703,-0.02796 0.08441,-0.08441 0.02117,-0.05644 0.03216,-0.130446 0.03216,-0.222168 2e-6,-0.190499 -0.0071,-0.352666 -0.02119,-0.486722 -0.0071,-0.14111 -0.0145,-0.275314 -0.02156,-0.402314 -0.0071,-0.134056 -0.01023,-0.28914 -0.01023,-0.465531 0,-0.162277 0.0032,-0.300021 0.01023,-0.41291 0.0071,-0.112887 0.01414,-0.229386 0.02119,-0.349328 0.01411,-0.127 0.02156,-0.285626 0.02156,-0.476128 0,-0.09172 -0.01062,-0.166086 -0.03179,-0.22253 -0.01411,-0.05645 -0.04244,-0.08478 -0.08478,-0.08478 -0.04939,-2e-6 -0.08834,0.02869 -0.116564,0.08514 -0.02822,0.05644 -0.05264,0.144611 -0.07381,0.264555 -0.04939,0.261056 -0.130839,0.465353 -0.243724,0.61352 -0.112891,0.148165 -0.292766,0.222533 -0.539708,0.222533 h -1.995858 l 2e-6,-1.973934 c 0,-0.246942 0.05984,-0.423275 0.179781,-0.529109 0.119944,-0.105834 0.310077,-0.183377 0.571131,-0.232763 0.119943,-0.02117 0.20811,-0.0495 0.264556,-0.08478 0.05645,-0.03528 0.08477,-0.07778 0.08477,-0.127162 2e-6,-0.04233 -0.02796,-0.0703 -0.08441,-0.08441 -0.05644,-0.02117 -0.13081,-0.03179 -0.22253,-0.03179 -0.190501,0 -0.342045,0.0035 -0.454933,0.0106 -0.112891,0.0071 -0.218762,0.01377 -0.31754,0.02083 l -0.38112,3.65e-4 -0.412545,-3.67e-4 c -0.112888,-0.0071 -0.232928,-0.01378 -0.359927,-0.02083 -0.119945,-0.0071 -0.275395,-0.0106 -0.465894,-0.01059 -0.09172,-2e-6 -0.165356,0.01062 -0.221803,0.03179 -0.05645,0.01412 -0.08477,0.04244 -0.08478,0.08478 2e-6,0.09878 0.116131,0.169239 0.348965,0.211572 0.268111,0.04939 0.45189,0.126932 0.550669,0.232764 0.105833,0.105832 0.158588,0.282167 0.158586,0.529111 v 1.973932 l -1.940678,-3.67e-4 c -0.246944,2e-6 -0.423277,-0.05984 -0.529111,-0.179779 -0.105835,-0.119945 -0.183377,-0.310077 -0.232765,-0.571133 -0.02117,-0.119941 -0.04949,-0.208108 -0.08477,-0.264555 -0.03528,-0.05645 -0.07778,-0.08477 -0.127162,-0.08478 -0.04233,10e-7 -0.0703,0.02796 -0.08441,0.08441 -0.02117,0.05644 -0.03179,0.130811 -0.03179,0.222533 -2e-6,0.190499 0.0035,0.342045 0.0106,0.454932 0.0071,0.112889 0.01414,0.218396 0.02119,0.317175 v 0.381485 l -3.66e-4,0.412546 c -0.0071,0.112887 -0.01377,0.232925 -0.02083,0.359925 -0.0071,0.119946 -0.01096,0.275031 -0.01096,0.465529 1e-6,0.09172 0.01099,0.165723 0.03216,0.222168 0.01411,0.05645 0.04244,0.08478 0.08478,0.08478 0.09877,0 0.16887,-0.116496 0.211204,-0.349328 0.04939,-0.268111 0.127297,-0.451529 0.23313,-0.550305 0.105834,-0.105834 0.282167,-0.158587 0.529109,-0.158587 l 1.94068,-3.65e-4 2e-6,1.963699 c -2e-6,0.246944 -0.07046,0.426819 -0.211573,0.539708 -0.14111,0.112889 -0.345774,0.193974 -0.613883,0.243361 -0.232834,0.04233 -0.348965,0.105709 -0.348965,0.190378 0,0.02117 0.0067,0.03887 0.02083,0.05298 z" />
+				</g>
+			</svg></button>
+		<h2 class="w-100 px-5 pt-3 text-white text-left" id="current-title">Subtitle</h2>
+	</nav>
+	<div id="menu-div-1" class="container-fluid p-0 m-0 d">
+		<h3 class="text-white text-center mt-3">Create Character</h3>
+		<div id="selections" class="">
+			<div class="container-fluid px-0 mx-auto secondary-container" id="classes-container">
+				<div class="container-fluid w-75 p-0 m-0 mx-auto">
+					<div class="border-dark border-left border-right" onmouseleave = "hoverClass(currentClass)">
+						<button class="btn btn-secondary text-dark mb-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block active" onmouseenter="hoverClass(0)" onclick="setClass(0)">Warrior</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverClass(1)" onclick="setClass(1)">Knight</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverClass(2)" onclick="setClass(2)">Wanderer</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverClass(3)" onclick="setClass(3)">Thief</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverClass(4)" onclick="setClass(4)">Bandit</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverClass(5)" onclick="setClass(5)">Hunter</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverClass(6)" onclick="setClass(6)">Sorcerer</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverClass(7)" onclick="setClass(7)">Pyromancer</button>
+						<button class="btn btn-secondary text-dark mt-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverClass(8)" onclick="setClass(8)">Cleric</button>
+					</div>
+					<div class="container-fluid text-dark w-100 mx-auto mt-2 d-block border border-dark user-select-none description-box" id="class-description-box"></div>
+				</div>
+			</div>
+			<div class="container-fluid px-0 mx-auto mx-md-2 secondary-container" id="gift-container">
+				<div class="container-fluid w-75 p-0 m-0 mx-auto">
+					<div class="border-dark border-left border-right" onmouseleave = "hoverGift(currentGift)">
+						<button class="btn btn-secondary text-dark mb-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block active" onmouseenter="hoverGift(0)" onclick="setGift(0)">None</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverGift(1)" onclick="setGift(1)">Goddess's Blessing</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverGift(2)" onclick="setGift(2)">Black Firebomb</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverGift(3)" onclick="setGift(3)">Twin Humanities</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverGift(4)" onclick="setGift(4)">Binoculars</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverGift(5)" onclick="setGift(5)">Pendant</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverGift(6)" onclick="setGift(6)">Master Key</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverGift(7)" onclick="setGift(7)">Tiny Being's Ring</button>
+						<button class="btn btn-secondary text-dark mt-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverGift(8)" onclick="setGift(8)">Old Witch's Ring</button>
+					</div>
+					<div class="container-fluid text-dark w-100 mx-auto mt-2 d-block border border-dark user-select-none description-box" id="gift-description-box"></div>
+				</div>
+			</div>
+			<div class="container-fluid px-0 mx-auto mx-md-2 secondary-container" id="body-container">
+				<div class="container-fluid w-75 p-0 m-0 mx-auto">
+					<div class="border-dark border-left border-right" onmouseleave = "hoverBody(currentBody)">
+						<button class="btn btn-secondary text-dark mb-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block active" onmouseenter="hoverBody(0)" onclick="setBody(0)">Average</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverBody(1)" onclick="setBody(1)">Slim</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverBody(2)" onclick="setBody(2)">Very Slim</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverBody(3)" onclick="setBody(3)">Large</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverBody(4)" onclick="setBody(4)">Very Large</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverBody(5)" onclick="setBody(5)">Large Upper Body</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverBody(6)" onclick="setBody(6)">Large Lower Body</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverBody(7)" onclick="setBody(7)">Top Heavy</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverBody(8)" onclick="setBody(8)">Tiny Head</button>
+					</div>
+					<div class="container-fluid text-dark w-100 mx-auto mt-2 d-block border border-dark user-select-none description-box" id="body-description-box"></div>
+				</div>
+			</div>
+			<div class="container-fluid px-0 mx-auto mx-md-2 secondary-container" id="face-container">
+				<div class="container-fluid w-75 p-0 m-0 mx-auto">
+					<div class="border-dark border-left border-right" onmouseleave = "hoverFace(currentFace)">
+						<button class="btn btn-secondary text-dark mb-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block active" onmouseenter="hoverFace(0)" onclick="setFace(0)">Commoner</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverFace(1)" onclick="setFace(1)">Delta Farmer</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverFace(2)" onclick="setFace(2)">Astora Noble</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverFace(3)" onclick="setFace(3)">Dragon Scholar</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverFace(4)" onclick="setFace(4)">Thorolund Cleric</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverFace(5)" onclick="setFace(5)">Jubliant Catarina</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverFace(6)" onclick="setFace(6)">Dubious Carim</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverFace(7)" onclick="setFace(7)">Common Zena</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverFace(8)" onclick="setFace(8)">Eerie Great Swamp</button>
+					</div>
+					<div class="container-fluid text-dark w-100 mx-auto mt-2 d-block border border-dark user-select-none description-box" id="face-description-box"></div>
+				</div>
+			</div>
+			<div class="container-fluid px-0 mx-auto mx-md-2 secondary-container" id="hair-container">
+				<div class="container-fluid w-75 p-0 m-0 mx-auto">
+					<div class="border-dark border-left border-right" onmouseleave = "hoverHair(currentHair)">
+						<button class="btn btn-secondary text-dark mb-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block active" onmouseenter="hoverHair(0)" onclick="setHair(0)">Shaved</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverHair(1)" onclick="setHair(1)">Receeding</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverHair(2)" onclick="setHair(2)">Short</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverHair(3)" onclick="setHair(3)">Swept Back</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverHair(4)" onclick="setHair(4)">Ponytail</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverHair(5)" onclick="setHair(5)">Wild</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverHair(6)" onclick="setHair(6)">Parted Center</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverHair(7)" onclick="setHair(7)">Curly</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverHair(8)" onclick="setHair(8)">Bobbed</button>
+					</div>
+					<div class="container-fluid text-dark w-100 mx-auto mt-2 d-block border border-dark user-select-none description-box" id="hair-description-box"></div>
+				</div>
+			</div>
+			<div class="container-fluid px-0 mx-auto mx-md-2 secondary-container" id="hcol-container">
+				<div class="container-fluid w-75 p-0 m-0 mx-auto">
+					<div class="border-dark border-left border-right" onmouseleave = "hoverBody(currentHCol)">
+						<button class="btn btn-secondary text-dark mb-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block active" onmouseenter="hoverHCol(0)" onclick="setHCol(0)">Black</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverHCol(1)" onclick="setHCol(1)">Dark Brown</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverHCol(2)" onclick="setHCol(2)">Light Brown</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverHCol(3)" onclick="setHCol(3)">Dark Red</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverHCol(4)" onclick="setHCol(4)">Dark Blue</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverHCol(5)" onclick="setHCol(5)">Gray</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverHCol(6)" onclick="setHCol(6)">Gold</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverHCol(7)" onclick="setHCol(7)">Silver</button>
+						<button class="btn btn-secondary text-dark my-1 mx-auto p-0 border border-dark border-left-0 border-right-0 rounded-0 w-100 d-block" onmouseenter="hoverHCol(8)" onclick="setHCol(8)">Red</button>
+					</div>
+					<div class="container-fluid text-dark w-100 mx-auto mt-2 d-block border border-dark user-select-none description-box" id="hcol-description-box"></div>
+				</div>
+			</div>
+			<!-- I shouldve made a javascript to do this automatically for the divs. Too late to go back now, but it would've saved time to plan that. -->
+		</div>
+		<!-- <div class="container-fluid d-flex flex-column flex-md-row justify-content-center" id="main-container"> -->
+		<div class="container-fluid" id="main-container">
+			<div class="container-fluid mx-auto mx-md-2 my-1 p-0 px-1 row" id="stats-container">
+				
+				<input class="form-control form-control col-12 btn btn-info my-1" id="name" name="name"/>
+				<label class="col-4 text-white my-1" for="gender">Sex</label>
+				<select class="form-control form-control col-8 btn btn-info my-1 rounded-0" id="gender" name="gender">
+					<option value="None" selected="selected" disabled="disabled" hidden="hidden">Choose one</option>
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+				</select>
+				<label class="col-4 text-white my-1" for="class-button">Class</label><button class="col-8 btn btn-info border rounded-0 my-1" id="class-button" onclick="$('#selections')[0].className='mx-auto mx-md-2 select-class'">None</button>
+				<label class="col-4 text-white my-1" for="gift-button">Gift</label><button class="col-8 btn btn-info border rounded-0 my-1" id="gift-button" onclick="$('#selections')[0].className='mx-auto mx-md-2 select-gift'">None</button>
+				<label class="col-4 text-white my-1" for="body-button">Physique</label><button class="col-8 btn btn-info border rounded-0 my-1" id="body-button" onclick="$('#selections')[0].className='mx-auto mx-md-2 select-body'">None</button>
+				
+			</div>
+			<div class="container-fluid mx-auto mx-md-2 my-1 py-0 px-1 row" id="stats-container">
+				
+				<label class="col-4 text-white my-1" for="face-button">Face</label><button class="col-8 btn btn-info border rounded-0 my-1" id="face-button" onclick="$('#selections')[0].className='mx-auto mx-md-2 select-face'">None</button>
+				<label class="col-4 text-white my-1" for="hair-button">Hair</label><button class="col-8 btn btn-info border rounded-0 my-1" id="hair-button" onclick="$('#selections')[0].className='mx-auto mx-md-2 select-hair'">None</button>
+				<label class="col-4 text-white my-1" for="hcol-button">Colour</label><button class="col-8 btn btn-info border rounded-0 my-1" id="hcol-button" onclick="$('#selections')[0].className='mx-auto mx-md-2 select-hcol'">None</button>
+				<div class="col-12 my-1 d-none d-md-block" style="opacity:0;height:32px">.</div>
+				<div class="d-flex container-fluid m-0 p-0">
+					<button class="btn btn-info border rounded-0 my-1 mr-1 w-100" id="finish" onclick="finish()">Accept</button>
+					<button class="btn btn-info border rounded-0 my-1 ml-1 w-100" id="custom" onclick="" disabled="disabled">Customize</button>
+				</div>
+			</div>
+			<div class="container-fluid mx-auto mx-md-2 my-1 p-0 row">
+				<div class="col-8 text-white user-select-none"><img alt="soul level" class="pr-1" src="images/stat-soul-level.jpg" />Level</div><div class="col-4 text-white" id="stat-level">4</div>
+				<div class="col-8 text-white user-select-none"><img alt="vitality" class="pr-1" src="images/stat-vitality.jpg" />Vitality</div><div class="col-4 text-white" id="stat-vitality">11</div>
+				<div class="col-8 text-white user-select-none"><img alt="attunement" class="pr-1" src="images/stat-attunement.jpg" />Attunement</div><div class="col-4 text-white" id="stat-attunement">8</div>
+				<div class="col-8 text-white user-select-none"><img alt="strength" class="pr-1" src="images/stat-strength.jpg" />Strength</div><div class="col-4 text-white" id="stat-strength">13</div>
+				<div class="col-8 text-white user-select-none"><img alt="dexterity" class="pr-1" src="images/stat-dexterity.jpg" />Dexterity</div><div class="col-4 text-white" id="stat-dexterity">13</div>
+				<div class="col-8 text-white user-select-none"><img alt="resistance" class="pr-1" src="images/stat-resistance.jpg" />Resistance</div><div class="col-4 text-white" id="stat-resistance">11</div>
+				<div class="col-8 text-white user-select-none"><img alt="intelligence" class="pr-1" src="images/stat-intelligence.jpg" />Intelligence</div><div class="col-4 text-white" id="stat-intelligence">9</div>
+				<div class="col-8 text-white user-select-none"><img alt="faith" class="pr-1" src="images/stat-faith.jpg" />Faith</div><div class="col-4 text-white" id="stat-faith">9</div>
+				<div class="col-8 text-white user-select-none"><img alt="humanity" class="pr-1" src="images/stat-humanity.jpg" />Humanity</div><div class="col-4 text-white" id="stat-humanity">0</div>
+			</div>
+			<div class="container-fluid mx-auto mx-md-2 my-3 p-3 row">
+				<img alt="Warrior" src="images/warrior.webp" id="class-image" width="196" height="196" class="mx-auto d-block w-100" style="box-shadow: 0 0 10px 10px #3D3D3D !important;background:#3D3D3D;object-fit: contain;"/>
+			</div>	
+		</div>
+	</div>
+	<div id="menu-div-2">
+		<h3 class="text-white text-center mt-3">Select a Character</h3>
+		<div class="container-fluid">
+
+			<button class="btn btn-info w-100 rounded-0 text-white m-0 mt-3 p-0 pr-2 d-flex flex-row" style="height:max-content;" onclick="loadGame()">
+				<img alt="account-1" src="images/accounts/account-1.webp" width="80" height="80" class="m-0 mr-4 p-1" />
+				<div class="container-fluid row p-0 pr-1">
+					<div class="container-fluid col-12 col-sm-6 p-0 m-0 text-left">
+						John Smith
+					</div>
+					<div class="container-fluid col-12 col-sm-6 p-0 m-0 text-left">
+						Undead Burg
+					</div>
+					<div class="container-fluid col-12 col-sm-6 p-0 m-0 row">
+						<div class="col-4 p-0 text-left">
+							Level
+						</div>
+						<div class="col-8 p-0 text-left">
+							10
+						</div>
+					</div>
+					<div class="container-fluid col-12 col-sm-6 p-0 m-0 row">
+						<div class="col-4 p-0 text-left">
+						Time
+						</div>
+						<div class="col-2 p-0 text-left">02h</div>
+						<div class="col-1 p-0 text-left">:</div>
+						<div class="col-2 p-0 text-left">39m</div>
+						<div class="col-1 p-0 text-left">:</div>
+						<div class="col-2 p-0 text-left">45s</div>
+					</div>
+				</div>
+			</button>
+			<button class="btn btn-info w-100 rounded-0 text-white m-0 mt-3 p-0 pr-2 d-flex flex-row" style="height:max-content;" onclick="loadGame()">
+				<img alt="account-2" src="images/accounts/account-2.webp" width="80" height="80" class="m-0 mr-4 p-1" />
+				<div class="container-fluid row p-0 pr-1">
+					<div class="container-fluid col-12 col-sm-6 p-0 m-0 text-left">
+						Ricky
+					</div>
+					<div class="container-fluid col-12 col-sm-6 p-0 m-0 text-left">
+						BlightTown
+					</div>
+					<div class="container-fluid col-12 col-sm-6 p-0 m-0 row">
+						<div class="col-4 p-0 text-left">
+							Level
+						</div>
+						<div class="col-8 p-0 text-left">
+							115
+						</div>
+					</div>
+					<div class="container-fluid col-12 col-sm-6 p-0 m-0 row">
+						<div class="col-4 p-0 text-left">
+						Time
+						</div>
+						<div class="col-2 p-0 text-left">83h</div>
+						<div class="col-1 p-0 text-left">:</div>
+						<div class="col-2 p-0 text-left">30m</div>
+						<div class="col-1 p-0 text-left">:</div>
+						<div class="col-2 p-0 text-left">37s</div>
+					</div>
+				</div>
+			</button>
+			<button class="btn btn-info w-100 rounded-0 text-white m-0 mt-3 p-0 pr-2 d-flex flex-row" style="height:max-content;" onclick="loadGame()">
+				<img alt="account-3" src="images/accounts/account-3.webp" width="80" height="80" class="m-0 mr-4 p-1" />
+				<div class="container-fluid row p-0 pr-1">
+					<div class="container-fluid col-12 col-sm-6 p-0 m-0 text-left">
+						Clyde
+					</div>
+					<div class="container-fluid col-12 col-sm-6 p-0 m-0 text-left">
+						Firelink Shrine
+					</div>
+					<div class="container-fluid col-12 col-sm-6 p-0 m-0 row">
+						<div class="col-4 p-0 text-left">
+							Level
+						</div>
+						<div class="col-8 p-0 text-left">
+							35
+						</div>
+					</div>
+					<div class="container-fluid col-12 col-sm-6 p-0 m-0 row">
+						<div class="col-4 p-0 text-left">
+						Time
+						</div>
+						<div class="col-2 p-0 text-left">11h</div>
+						<div class="col-1 p-0 text-left">:</div>
+						<div class="col-2 p-0 text-left">53m</div>
+						<div class="col-1 p-0 text-left">:</div>
+						<div class="col-2 p-0 text-left">20s</div>
+					</div>
+				</div>
+			</button>
+		</div>
+	</div>
+	<div id="menu-div-3">
+		<h3 class="text-white text-center mt-3">Audio</h3>
+		<div class="container-fluid row">
+			<label for="volMaster" class="col-4 text-center text-white align-middle">Master</label>
+			<input type="range" class="form-range col-8 p-0 d-block align-middle border border-light" id="volMaster"  min="0.0	" max="1.0" step="0.1" oninput="changeSlider(); setMasterVolume(this.value)"/>
+			<label for="volEffects" class="col-4 text-center text-white align-middle">Effects</label>
+			<input type="range" class="form-range col-8 p-0 d-block align-middle border border-light" id="volEffects"  min="0.0" max="1.0" step="0.1" oninput="changeSlider(); setEffectVolume(this.value)"/>
+			<label for="volMusic" class="col-4 text-center text-white align-middle">Music</label>
+			<input type="range" class="form-range col-8 p-0 d-block align-middle border border-light" id="volMusic" min="0.0" max="1.0" step="0.1" oninput="changeSlider(); setMusicVolume(this.value)"/>
+		</div>
+	</div>
+	<div id="menu-div-4">
+		<h3 class="text-white text-center mt-3">Are you sure you want to quit?</h3>
+		<div class="container-fluid row mx-auto">
+			<button class="d-block text-white btn btn-primary w-100 mx-auto p-1 py-0 border-0 col-12 col-md-6 d-block" onclick="alert('If this was on a desktop, the game would quit.')"><h4 class="m-0 p-0 py-1">Yes</h4></button>
+			<button class="d-block text-white btn btn-primary w-100 mx-auto p-1 py-0 border-0 col-12 col-md-6 d-block" onclick="openMenu(0)"><h4 class="m-0 p-0 py-1">No</h4></button>
+		</div>
+	</div>
+
+	<audio src="https://cool-as-ice-tea.com/ds-menu-theme.mp3" id="music"></audio>
+<!-- CURSOR_MOVE = for ranges -->
+<!-- CURSOR_SELECT = mousing over buttons -->
+<!-- CURSOR_CANCEL = exiting menus -->
+<!-- CURSOR_OK = accepting menus -->
+<!-- 
+	Test: R2DTXCEXnTU
+	Final: IMWTyxrBgRU
+-->
+	<!-- Youtube Embed API -->
+<!-- Only used for music -->
+	
+ <!-- &origin=https://example.com" -->
+</body>
+</html>
+
+
+<!-- Sources -->
+<!-- Parchment Paper Texture by sinnedaria on DeviantArt -->
+<!-- https://freestocktextures.com/photos-parchment/ -->
+<!-- Menu Theme and button sounds from Dark Souls -->
